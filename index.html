@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>
+            Basketball Scoreball
+        </title>
+        <link rel="stylesheet"
+        href="style.css">
+    </head>
+    <body>
+        <h1><strong> BASKETBALL SCOREBALL</strong>
+        </h1>
+        <p style="text-align: center;">
+            Carefully click the buttons to add points
+        </p>
+        <div class="scoreboard">
+<!--HOME  TEAM-->
+<div class="team">
+    <h2><b> HOME</b></h2>
+    <div class="score" id="home-score">0</div>
+    <div class="buttons">
+        <button onclick="addHome(1)"> +1</button>
+        <button onclick="addHome(2)">+2</button>
+        <button onclick="addHome(3)">+3</button>
+    </div>
+</div>
+<!--GUEST TEAM-->
+<div class="team">
+    <h2><b>GUEST</b></h2>
+    <div class="score"
+    id="guest-score">0</div>
+    <div class="buttons">
+        <button onclick="addGuest(1)">+1</button>
+        <button onclick="addGuest(2)">+2</button>
+        <button onclick="addGuest(3)">+3</button>
+    </div>
+</div>
+        </div>
+        <!--RESET BUTTON
+        -->
+        <button class="reset-button"
+        type="button" onclick="resetScores()" aria-label="Reset both team scores">Reset</button>
+        <script src="script.js"></script>
+    </body>
+</html>
